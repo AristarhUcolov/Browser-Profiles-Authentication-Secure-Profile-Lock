@@ -24,10 +24,11 @@
 
 ### 🛠️ How It Works
 
-![image](https://github.com/user-attachments/assets/ca3446d7-0586-4570-b5bb-3a382422a362)
+!<img src="https://github.com/user-attachments/assets/ca3446d7-0586-4570-b5bb-3a382422a362" width="500">
 
 
 ### Structures
+
 secure-profile-lock/
 ├── base_script/
 │   └── background.js       # Core logic
