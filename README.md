@@ -22,11 +22,6 @@
 1. Visit [extension page](https://chrome.google.com/webstore/detail/secure-profile-lock/your-extension-id)
 2. Click "Add to Chrome"
 
-### Manual Installation
-```bash
-git clone https://github.com/yourusername/secure-profile-lock.git
-cd secure-profile-lock
-
 ### 🛠️ How It Works
 
 ![image](https://github.com/user-attachments/assets/ca3446d7-0586-4570-b5bb-3a382422a362)
