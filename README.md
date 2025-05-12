@@ -29,20 +29,23 @@
 ### Structures
 secure-profile-lock/
 ├── base_script/
-│   └── background.js       # Core logic
+│   ├── background.js       # Core extension logic
+│   └── lock-manager.js     # Password handling
 ├── scripts/
-│   └── content.js          # Page injection
+│   └── content.js          # Page injection logic
 ├── styles/
-│   └── styles.css          # UI styling
+│   ├── main.css            # Primary styles
+│   └── themes/             # Optional themes
 ├── html/
 │   ├── unlock.html         # Password prompt
-│   └── password-setup.html # Initial setup
+│   └── setup.html          # Initial configuration
 ├── images/                 # Assets
-│   ├── icon.png
-│   └── screenshot.png
-├── manifest.json           # Extension config
+│   ├── icon.png            # Extension icon
+│   ├── banner.png          # Header image
+│   └── screenshots/        # Documentation images
+├── manifest.json           # Extension manifest
+├── LICENSE
 └── README.md
-
 ### 🛠️ How It Works
 
 !<img src="https://github.com/user-attachments/assets/ca3446d7-0586-4570-b5bb-3a382422a362" width="500">
