@@ -28,4 +28,4 @@ git clone https://github.com/yourusername/secure-profile-lock.git
 cd secure-profile-lock
 
 🛠️ How It Works
-![project](https://github.com/user-attachments/assets/f9901f2b-9fbf-44d8-a5f7-d9f853085c8b)
+![r](https://github.com/user-attachments/assets/bc107e86-22ac-46db-995e-926500d1a980)
