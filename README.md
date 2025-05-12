@@ -27,5 +27,24 @@
 git clone https://github.com/yourusername/secure-profile-lock.git
 cd secure-profile-lock
 
-🛠️ How It Works
-![r](https://github.com/user-attachments/assets/bc107e86-22ac-46db-995e-926500d1a980)
+### 🛠️ How It Works
+
+![r](https://github.com/user-attachments/assets/98e86600-3052-4bfc-81af-76cc1dc7997e)
+
+### Structures
+secure-profile-lock/
+├── base_script/
+│   └── background.js       # Core logic
+├── scripts/
+│   └── content.js          # Page injection
+├── styles/
+│   └── styles.css          # UI styling
+├── html/
+│   ├── unlock.html         # Password prompt
+│   └── password-setup.html # Initial setup
+├── images/                 # Assets
+│   ├── icon.png
+│   └── screenshot.png
+├── manifest.json           # Extension config
+└── README.md
+
