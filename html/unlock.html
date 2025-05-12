@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Profile Locked</title>
+  <link rel="icon" href="../images/icon.png" type="image/png">
+  <link rel="stylesheet" href="../styles/styles.css">
+  <meta charset="UTF-8">
+</head>
+<body>
+  <div class="container">
+    <h1>Profile Locked</h1>
+    <p>Enter your password to unlock this profile</p>
+    
+    <form id="unlockForm">
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" required>
+      </div>
+      
+      <button type="submit" class="btn">Unlock</button>
+    </form>
+    
+    <div id="message" class="hidden"></div>
+    
+    <p id="hint" class="hint"></p>
+  </div>
+  
+  <script src="../scripts/unlock.js"></script>
+</body>
+</html>
