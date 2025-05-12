@@ -1,11 +1,11 @@
 # 🔒 Secure Profile Lock - Chrome Extension
 
-![Extension Screenshot](/images/icon.png)  
-*Password protection for browser profiles*
-
 [![Chrome Web Store Version](https://img.shields.io/chrome-web-store/v/your-extension-id?color=blue)](https://chrome.google.com/webstore/detail/aonieimkkkiknekpipfblglanjganbol/preview)
 [![GitHub license](https://img.shields.io/badge/license-MIT-green)](https://github.com/AristarhUcolov/Browser-Profiles-Authentication-Secure-Profile-Lock/LICENSE)
 ![Manifest Version](https://img.shields.io/badge/manifest-v3-important)
+
+![Extension Screenshot](/images/icon.png)  
+*Password protection for browser profiles*
 
 ## 🌟 Features
 
