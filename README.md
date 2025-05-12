@@ -29,7 +29,8 @@ cd secure-profile-lock
 
 ### 🛠️ How It Works
 
-![r](https://github.com/user-attachments/assets/98e86600-3052-4bfc-81af-76cc1dc7997e)
+![image](https://github.com/user-attachments/assets/ca3446d7-0586-4570-b5bb-3a382422a362)
+
 
 ### Structures
 secure-profile-lock/
