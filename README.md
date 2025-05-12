@@ -22,6 +22,10 @@
 1. Visit [extension page](https://chrome.google.com/webstore/detail/secure-profile-lock/your-extension-id)
 2. Click "Add to Chrome"
 
+### Author: Aristarh Ucolov
+### Email: aristarh.ucolov@gmail.com
+### GitHub Profile: https://github.com/AristarhUcolov/
+
 ### Structures
 secure-profile-lock/
 ├── base_script/
