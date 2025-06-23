@@ -46,6 +46,8 @@ secure-profile-lock/
 ├── manifest.json           # Extension manifest
 ├── LICENSE
 └── README.md
+
+#### Concept: Aristarh Ucolov
 ### 🛠️ How It Works
 
 !<img src="https://github.com/user-attachments/assets/ca3446d7-0586-4570-b5bb-3a382422a362" width="500">
