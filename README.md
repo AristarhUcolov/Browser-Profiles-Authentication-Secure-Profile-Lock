@@ -26,27 +26,6 @@
 ### Email: aristarh.ucolov@gmail.com
 ### GitHub Profile: https://github.com/AristarhUcolov/
 
-### Structures
-secure-profile-lock/
-├── base_script/
-│   ├── background.js       # Core extension logic
-│   └── lock-manager.js     # Password handling
-├── scripts/
-│   └── content.js          # Page injection logic
-├── styles/
-│   ├── main.css            # Primary styles
-│   └── themes/             # Optional themes
-├── html/
-│   ├── unlock.html         # Password prompt
-│   └── setup.html          # Initial configuration
-├── images/                 # Assets
-│   ├── icon.png            # Extension icon
-│   ├── banner.png          # Header image
-│   └── screenshots/        # Documentation images
-├── manifest.json           # Extension manifest
-├── LICENSE
-└── README.md
-
 #### Concept: Aristarh Ucolov
 ### 🛠️ How It Works
 
