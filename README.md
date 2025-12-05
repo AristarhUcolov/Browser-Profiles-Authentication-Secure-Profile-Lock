@@ -114,7 +114,7 @@ The extension uses Chrome's Manifest V3 architecture with the following componen
 
 ### Security Model
 
-- **Password Storage:** Passwords are stored locally in Chrome's storage (not encrypted by default - consider using bcrypt for production)
+- **Password Storage:** Passwords are stored in Chrome's local storage API, which provides platform-specific encryption when available. For additional security, consider implementing client-side hashing (e.g., with Web Crypto API)
 - **Lock Enforcement:** Content scripts prevent page access until authentication
 - **Navigation Control:** Web navigation API intercepts all page loads when locked
 - **Tamper Protection:** Extension cannot be disabled when profile is locked
@@ -128,10 +128,10 @@ The extension uses Chrome's Manifest V3 architecture with the following componen
 - ✅ Universal website coverage
 
 ### Security Limitations
-- ⚠️ Password is stored in plain text in local storage (consider implementing hashing)
+- ⚠️ Passwords stored without additional client-side hashing (relies on Chrome's storage encryption)
 - ⚠️ No password recovery mechanism (by design for security)
 - ⚠️ Cannot protect Chrome internal pages (chrome://)
-- ⚠️ Advanced users could potentially bypass by accessing Chrome's local storage directly
+- ⚠️ Advanced users with developer tools or malicious extensions could potentially access stored data
 
 ### Recommendations for Enhanced Security
 - Use a strong, unique password (12+ characters with mixed case, numbers, symbols)
@@ -199,7 +199,7 @@ Contributions are welcome! Here's how you can help:
 **A:** For security reasons, the extension is designed to resist tampering. To remove protection, you need to uninstall it completely.
 
 ### Q: Is my password encrypted?
-**A:** Currently, passwords are stored in Chrome's local storage. While not transmitted anywhere, they are not encrypted. For maximum security, future versions may implement proper password hashing.
+**A:** Passwords are stored using Chrome's storage API, which provides platform-specific encryption (e.g., on Windows, it uses DPAPI; on macOS, it uses Keychain). However, the extension does not implement additional client-side hashing. Your password never leaves your device.
 
 ## 📄 License
 
