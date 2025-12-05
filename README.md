@@ -99,7 +99,7 @@ The extension uses Chrome's Manifest V3 architecture with the following componen
 └─────────────┬───────────────────────────┘
               │
               ├──► Local Storage (chrome.storage.local)
-              │    └─ Encrypted password
+              │    └─ Password (unencrypted)
               │    └─ Lock state
               │    └─ Password hint
               │
@@ -158,7 +158,7 @@ Browser-Profiles-Authentication-Secure-Profile-Lock/
 ├── styles/
 │   └── styles.css            # UI styling
 ├── manifest.json             # Extension manifest (Manifest V3)
-├── LICENSE                   # MIT License
+├── LICENSE                   # GNU GPL v3 License
 └── README.md                 # This file
 ```
 
