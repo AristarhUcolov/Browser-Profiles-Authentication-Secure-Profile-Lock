@@ -1,7 +1,7 @@
 # 🔒 Secure Profile Lock - Chrome Extension
 
 [![Chrome Web Store Version](https://img.shields.io/chrome-web-store/v/aonieimkkkiknekpipfblglanjganbol?color=blue)](https://chrome.google.com/webstore/detail/browser-profiles-authenti/aonieimkkkiknekpipfblglanjganbol)
-[![GitHub license](https://img.shields.io/badge/license-MIT-green)](https://github.com/AristarhUcolov/Browser-Profiles-Authentication-Secure-Profile-Lock/blob/main/LICENSE)
+[![GitHub license](https://img.shields.io/badge/license-GPL%20v3-blue)](https://github.com/AristarhUcolov/Browser-Profiles-Authentication-Secure-Profile-Lock/blob/main/LICENSE)
 ![Manifest Version](https://img.shields.io/badge/manifest-v3-important)
 
 <div align="center">
@@ -114,10 +114,10 @@ The extension uses Chrome's Manifest V3 architecture with the following componen
 
 ### Security Model
 
-- **Password Storage:** Passwords are stored in Chrome's local storage API, which provides platform-specific encryption when available. For additional security, consider implementing client-side hashing (e.g., with Web Crypto API)
+- **Password Storage:** Passwords are stored directly in Chrome's local storage API without additional encryption or hashing. While Chrome provides some platform protections, the password is stored in a retrievable format. Future versions could implement client-side hashing for enhanced security
 - **Lock Enforcement:** Content scripts prevent page access until authentication
 - **Navigation Control:** Web navigation API intercepts all page loads when locked
-- **Tamper Protection:** Extension cannot be disabled when profile is locked
+- **Tamper Protection:** Extension is designed to resist tampering when profile is locked
 
 ## 🔒 Security Considerations
 
@@ -128,10 +128,11 @@ The extension uses Chrome's Manifest V3 architecture with the following componen
 - ✅ Universal website coverage
 
 ### Security Limitations
-- ⚠️ Passwords stored without additional client-side hashing (relies on Chrome's storage encryption)
+- ⚠️ Passwords are stored in Chrome's local storage without hashing or additional encryption
 - ⚠️ No password recovery mechanism (by design for security)
 - ⚠️ Cannot protect Chrome internal pages (chrome://)
-- ⚠️ Advanced users with developer tools or malicious extensions could potentially access stored data
+- ⚠️ Users with access to Chrome's developer tools or file system could potentially retrieve stored passwords
+- ⚠️ Provides protection against casual access but not against determined technical users
 
 ### Recommendations for Enhanced Security
 - Use a strong, unique password (12+ characters with mixed case, numbers, symbols)
@@ -199,11 +200,11 @@ Contributions are welcome! Here's how you can help:
 **A:** For security reasons, the extension is designed to resist tampering. To remove protection, you need to uninstall it completely.
 
 ### Q: Is my password encrypted?
-**A:** Passwords are stored using Chrome's storage API, which provides platform-specific encryption (e.g., on Windows, it uses DPAPI; on macOS, it uses Keychain). However, the extension does not implement additional client-side hashing. Your password never leaves your device.
+**A:** Currently, passwords are stored in Chrome's local storage without encryption or hashing. While your password never leaves your device and the extension provides protection against casual access, it's not encrypted at rest. This extension is designed for convenience and basic privacy protection, not for high-security scenarios.
 
 ## 📄 License
 
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the **GNU General Public License v3.0** - see the [LICENSE](LICENSE) file for details.
 
 ## 👨‍💻 Author
 
