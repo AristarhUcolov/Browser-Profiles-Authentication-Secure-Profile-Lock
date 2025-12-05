@@ -77,7 +77,7 @@ Every time your browser restarts or when someone tries to access your protected 
 
 To change or reset your password:
 1. Navigate to `chrome://extensions/`
-2. Find "Secure Profile Lock"
+2. Find "Browser Profiles Authentication - Secure Profile Lock"
 3. Click **"Remove"** to uninstall the extension (this clears stored password)
 4. Reinstall and set up a new password
 
@@ -114,7 +114,7 @@ The extension uses Chrome's Manifest V3 architecture with the following componen
 
 ### Security Model
 
-- **Password Storage:** Passwords are stored directly in Chrome's local storage API without additional encryption or hashing. While Chrome provides some platform protections, the password is stored in a retrievable format. Future versions could implement client-side hashing for enhanced security
+- **Password Storage:** Passwords are stored directly in Chrome's local storage API without additional encryption or hashing. While Chrome provides some OS-level protections for stored data (e.g., DPAPI on Windows, Keychain on macOS), the extension stores passwords in a retrievable format. Future versions could implement client-side hashing for enhanced security.
 - **Lock Enforcement:** Content scripts prevent page access until authentication
 - **Navigation Control:** Web navigation API intercepts all page loads when locked
 - **Tamper Protection:** Extension is designed to resist tampering when profile is locked
